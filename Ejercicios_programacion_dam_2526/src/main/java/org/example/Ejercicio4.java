@@ -17,16 +17,7 @@ public class Ejercicio4 {
 
         if (num1 == num2 && num1 == num3 && num2 == num3) {
             System.out.println("ERROR: hay números introducidos que son iguales");
-        } else if (num1 < num2) {
-            int min = num1;
-            System.out.println("El numero" + min "es el mínimo");
-        } else if (num1 < num3) {
-            int min = num3;
-            System.out.println("El numero" + min "es el mínimo");
-        } else if (num2 < num3) {
-            int min = num2;
-            System.out.println("El numero" + min "es el mínimo");
-    }
+        }
     }
 
 }

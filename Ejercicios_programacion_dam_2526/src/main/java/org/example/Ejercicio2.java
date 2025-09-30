@@ -8,13 +8,25 @@ public class Ejercicio2 {
 
         final double JORNADA = 40;
         final double EXTRA = 1.5;
+        double horas = 0;
+        double tarifa = 0;
+
+        boolean repetir = true;
 
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("Introduce el número de horas: ");
-        double horas = teclado.nextDouble();
-        System.out.println("Introduce la tarifa por hora: ");
-        double tarifa = teclado.nextDouble();
+        do {
+            try {
+                System.out.println("Introduce el número de horas: ");
+                horas = teclado.nextDouble();
+                System.out.println("Introduce la tarifa por hora: ");
+                tarifa = teclado.nextDouble();
+                repetir = false;
+            } catch (Exception e) {
+                System.out.println("Debes de introducir un número");
+            }
+            teclado.nextLine();
+        } while (repetir==true);
 
         if (horas > 40) {
             double horas_extra = horas - JORNADA;
