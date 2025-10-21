@@ -33,37 +33,41 @@ public class ActividadUD2 {
         }
 
         if (seguir) {
-            if (modo == 1) {
-                System.out.println("Introduce tu año de nacimiento: ");
-                String anyo_nacimiento = teclado.next();
 
-                try {
-                    anyo_nacimiento_int = Integer.parseInt(anyo_nacimiento);
+            switch (modo){
 
-                } catch (NumberFormatException e) {
-                    System.out.println("El formato no es númerico.");
-                    return;
-                }
+                case 1:
+                    System.out.println("Introduce tu año de nacimiento: ");
+                    String anyo_nacimiento = teclado.next();
 
-            } else if (modo==2) {
-                int edad = 0;
-                System.out.println("Introduce la edad: ");
-                if (teclado.hasNextInt()) {
-                    edad = teclado.nextInt();
-                } else {
-                    System.out.println("La edad no tiene formato correcto (númerico).");
-                    return;
-                }
+                    try {
+                        anyo_nacimiento_int = Integer.parseInt(anyo_nacimiento);
 
-                if (edad >= 0) {
-                    anyo_nacimiento_int = anyo_actual - edad;
-                } else {
-                    System.out.println("La edad no es correcta.");
-                }
+                    } catch (NumberFormatException e) {
+                        System.out.println("El formato no es númerico.");
+                        return;
+                    }
+                    break;
 
-            } else {
-                System.out.println("El módulo introducido no es correcto.");
-                return;
+                case 2:
+                    int edad = 0;
+                    System.out.println("Introduce la edad: ");
+                    if (teclado.hasNextInt()) {
+                        edad = teclado.nextInt();
+                    } else {
+                        System.out.println("La edad no tiene formato correcto (númerico).");
+                        return;
+                    }
+                    if (edad >= 0) {
+                        anyo_nacimiento_int = anyo_actual - edad;
+                    } else {
+                        System.out.println("La edad no es correcta.");
+                    }
+                    break;
+
+                default:
+                    System.out.println("El módulo introducido no es correcto.");
+                    break;
             }
 
             if (anyo_nacimiento_int >= ANYO_MINIMO && anyo_nacimiento_int <= anyo_actual) {
