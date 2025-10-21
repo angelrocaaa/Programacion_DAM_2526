@@ -47,5 +47,47 @@ public class StringsTema2 {
         String frase_reemplazos = frase.replace("palo", "Florentino");
         System.out.println(frase_reemplazos);
 
+        int numero = 1;
+        char caracter = 'A';
+        String palabra = "Angel";
+
+        switch (palabra) {
+            case "Raúl":
+                System.out.println("El alumno Raúl");
+                break;
+            case "Angel":
+                System.out.println("El alumno Ángel");
+                break;
+            default:
+                System.out.println("No conozco ese nombre");
+                break;
+        }
+
+        switch (numero) {
+            case 1:
+                System.out.println("El alumno Raúl");
+                break;
+            case 2:
+                System.out.println("El alumno Ángel");
+                break;
+            default:
+                System.out.println("No conozco ese nombre");
+                break;
+        }
+
+        switch (caracter) {
+            case 'x':
+                System.out.println("El alumno Raúl");
+                break;
+            case 'A':
+                System.out.println("El alumno Ángel");
+                break;
+            default:
+                System.out.println("No conozco ese nombre");
+                break;
+        }
+
+
+
     }
 }
