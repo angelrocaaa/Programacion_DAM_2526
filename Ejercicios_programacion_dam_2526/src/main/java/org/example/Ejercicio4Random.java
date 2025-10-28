@@ -15,7 +15,7 @@ public class Ejercicio4Random {
         String minus = "abcdefghijklmnopqrstuvwxyz";
         String num = "0123456789";
 
-        
+
 
         for (int i=0;i<12;i++) {
 
