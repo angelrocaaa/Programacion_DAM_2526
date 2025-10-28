@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Scanner; // Para leer datos del teclado
 
-public class Práctica3UD2 {
+public class Practica3UD2 {
 
     static void main() {
 
@@ -99,12 +99,20 @@ public class Práctica3UD2 {
                 System.out.println("No se ha podido reparar el ISBN.");
                 break;
 
+<<<<<<< HEAD
             //Sale si escribimos 3 en la opcion
+=======
+                //Sale si escribimos 3 en la opcion
+>>>>>>> fbbf65325a78e27f9f5e168a86b48c2a9b6892e0
             case 3:
                 System.out.println("Saliendo del validador de ISBN...");
                 break;
 
+<<<<<<< HEAD
             //Si es distinto a 1, 2 o 3 opción no valida y termina
+=======
+                //Si es distinto a 1, 2 o 3 opción no valida y termina
+>>>>>>> fbbf65325a78e27f9f5e168a86b48c2a9b6892e0
             default:
                 System.out.println("ERROR. Opción no válida.");
                 break;
