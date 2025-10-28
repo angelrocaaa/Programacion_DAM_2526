@@ -16,7 +16,7 @@ public class Practica3UD2 {
         System.out.println("***** VALIDADOR ISBN *****");
         System.out.println("---------------------------");
         System.out.println("1 - Validar ISBN");
-        System.out.println("2 - Reparar ISBN (usar '?')");
+        System.out.println("2 - Reparar ISBN");
         System.out.println("3 - SALIR");
         System.out.println("---------------------------");
 
