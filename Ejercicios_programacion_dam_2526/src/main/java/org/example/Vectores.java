@@ -1,10 +1,16 @@
 package org.example;
 
 import java.util.Arrays;
+import java.util.InputMismatchException;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Vectores {
 
     static void main() {
+
+        Scanner teclado = new Scanner(System.in);
+        Random aleatorio = new Random();
 
         int vector[] = {1,3,4,6,10};
         System.out.println(Arrays.toString(vector));
@@ -27,6 +33,35 @@ public class Vectores {
         for (int i=vector.length-1;i>=0;i--) {
             System.out.println(vector[i]);
         }
+
+        int vector3[] = new int [8];
+
+        vector3=vector;
+
+        vector3=vector.clone();
+
+        System.out.println(Arrays.toString(vector3));
+
+        for (int i=0;i< vector3.length;i++) {
+            vector3[i]=aleatorio.nextInt(501);
+        }
+
+        System.out.println(Arrays.toString(vector3));
+
+        int vector4[] = new int[4];
+
+        for (int i=0;i< vector4.length;i++) {
+            try {
+                vector3[i] = teclado.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("Valor incorrecto introducido");
+            }
+
+        }
+
+        System.out.println(Arrays.toString(vector4));
+
+
 
     }
 }
