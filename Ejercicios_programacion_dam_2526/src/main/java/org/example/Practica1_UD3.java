@@ -3,7 +3,7 @@ package org.example;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Practica1 {
+public class Practica1_UD3 {
 
     static void main() {
         Scanner teclado = new Scanner(System.in);
