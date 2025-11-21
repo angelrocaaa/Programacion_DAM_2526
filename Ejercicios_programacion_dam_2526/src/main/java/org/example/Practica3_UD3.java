@@ -16,12 +16,12 @@ public class Practica3_UD3 {
         System.out.println("******* VALIDADOR DE COMPATIBILIDAD ZX SPECTRUM *******");
         System.out.println("Introduce la resolución de tu pantalla (ancho x alto)...");
 
-        while (ancho % 8 == 1 || alto % 8 == 1 || ancho > MAXIMO || alto > MAXIMO) {
+        do {
             System.out.println("Ancho:");
             ancho = teclado.nextInt();
             System.out.println("Alto:");
             alto = teclado.nextInt();
-        }
+        } while (ancho % 8 == 1 || alto % 8 == 1 || ancho > MAXIMO || alto > MAXIMO);
 
         String matriz[][] = new String[alto][ancho];
 
