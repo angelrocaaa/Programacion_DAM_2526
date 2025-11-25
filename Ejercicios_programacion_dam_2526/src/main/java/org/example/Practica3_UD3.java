@@ -25,20 +25,31 @@ public class Practica3_UD3 {
 
         String matriz[][] = new String[alto][ancho];
 
-        externo:
-        for (int i = 0; i < matriz.length; i++) {
-            interno:
-            for (int j = 0; j < matriz[i].length; j++) {
-                System.out.println("Introduce línea a línea) los colores de tu imagen para cada píxel:");
-                String letra = teclado.next();
+        System.out.println("Introduce línea a línea) los colores de tu imagen para cada píxel:");
 
+        for (int i = 0; i < matriz.length; i++) {
+            String fila[] = teclado.next().split("");
+            matriz[i] = fila;
+            for (String letra : fila) {
                 if (!letra.matches("[A-O]")) {
                     System.out.println("Has introducido un valor de píxel incorrecto (A-O)");
                     i--;
-                    continue externo;
                 }
             }
         }
+
+        for (String fila[] : matriz) {
+            for (String num : fila) {
+                System.out.print(num + " ");
+            }
+            System.out.println();
+        }
+
+//        for (int i = 0; i < ; i++) {
+//            for (int j = 0; j < ; j++) {
+//
+//            }
+//        }
 
     }
 }
