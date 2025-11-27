@@ -34,33 +34,29 @@ public class Vectores {
 //            System.out.println(vector[i]);
 //        }
 //
-//        int vector3[] = new int [8];
-//
-//        vector3=vector;
-//
-//        vector3=vector.clone();
-//
-//        System.out.println(Arrays.toString(vector3));
-//
-//        for (int i=0;i< vector3.length;i++) {
-//            vector3[i]=aleatorio.nextInt(501);
-//        }
-//
-//        System.out.println(Arrays.toString(vector3));
+        int vector3[] = new int [8];
 
-        int vector4[] = new int[4];
+        System.out.println(Arrays.toString(vector3));
 
-        for (int i=0;i< vector4.length;i++) {
-            try {
-                vector4[i] = teclado.nextInt();
-            } catch (InputMismatchException e) {
-                System.out.println("Valor incorrecto introducido");
-            }
-
+        for (int i=0;i< vector3.length;i++) {
+            vector3[i]=aleatorio.nextInt(501);
         }
 
-        System.out.println(Arrays.toString(vector4));
+        System.out.println(Arrays.toString(vector3));
 
+//        int vector4[] = new int[4];
+//
+//        for (int i=0;i< vector4.length;i++) {
+//            try {
+//                vector4[i] = teclado.nextInt();
+//            } catch (InputMismatchException e) {
+//                System.out.println("Valor incorrecto introducido");
+//            }
+//
+//        }
+//
+//        System.out.println(Arrays.toString(vector4));
+//
 
 
     }
