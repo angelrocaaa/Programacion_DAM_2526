@@ -42,6 +42,7 @@ public class Vectores {
             vector3[i]=aleatorio.nextInt(501);
         }
 
+        Arrays.parallelSort(vector3);
         System.out.println(Arrays.toString(vector3));
 
 //        int vector4[] = new int[4];
